@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "PTC-.#####",
+ "creation": "2022-02-12 03:40:10.416157",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "filters_section",
+  "company",
+  "from_date",
+  "get_posted_dated_cheques",
+  "column_break_3",
+  "cost_center",
+  "department",
+  "column_break_5",
+  "to_date",
+  "default_bank_account",
+  "account_currency",
+  "apply_bank",
+  "cheques_details_section",
+  "details",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "filters_section",
+   "fieldtype": "Section Break",
+   "label": "Filters"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "From Date"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "To Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Post PT Cheques",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "apply_bank",
+   "fieldtype": "Button",
+   "label": "Apply Default Bank Account to All Rows"
+  },
+  {
+   "fieldname": "get_posted_dated_cheques",
+   "fieldtype": "Button",
+   "label": "Get Posted Dated Cheques"
+  },
+  {
+   "fieldname": "cheques_details_section",
+   "fieldtype": "Section Break",
+   "label": "Cheques Details"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Details",
+   "options": "Post PT Cheques Detail"
+  },
+  {
+   "fieldname": "default_bank_account",
+   "fieldtype": "Link",
+   "label": "Default Bank Account",
+   "options": "Account"
+  },
+  {
+   "fetch_from": "default_bank_account.account_currency",
+   "fieldname": "account_currency",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency",
+   "read_only": 1
+  }
+ ],
+ "hide_toolbar": 1,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2022-03-30 01:28:31.212352",
+ "modified_by": "Administrator",
+ "module": "pdc",
+ "name": "Post PT Cheques",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
