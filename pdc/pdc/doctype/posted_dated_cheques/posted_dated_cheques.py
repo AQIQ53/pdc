@@ -5,4 +5,7 @@
 from frappe.model.document import Document
 
 class PostedDatedCheques(Document):
-	pass
+
+	def on_cancel(self):
+		self.status = 'Cancelled'
+		self.save(ignore_permissions=True)
