@@ -9,7 +9,6 @@
  "field_order": [
   "naming_series",
   "company",
-  "company_number",
   "cost_center",
   "department",
   "project",
@@ -48,14 +47,6 @@
    "label": "Company",
    "options": "Company",
    "reqd": 1
-  },
-  {
-   "fetch_from": "company.company_number",
-   "fieldname": "company_number",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Company Number",
-   "read_only": 1
   },
   {
    "fieldname": "cost_center",
