@@ -39,7 +39,7 @@
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "label": "Naming Series",
-   "options": "PDR.{company_number}.{######}\nPDP.{company_number}.{######}"
+   "options": "PDR.{######}\nPDP.{######}"
   },
   {
    "fieldname": "company",
